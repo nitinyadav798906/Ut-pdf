@@ -20,11 +20,5 @@
       "description": "Your Cloudflare Worker Proxy URL",
       "value": "https://39217846.utkarsh-proxy.pages.dev/?url="
     }
-  },
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "standard-2x"
-    }
   }
 }
