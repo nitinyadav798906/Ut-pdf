@@ -23,10 +23,13 @@
     }
   },
   "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "standard-2x"
-        }
-   }, 
-  "stack": "container"
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "stack": "heroku-22",
+  "buildpacks": [
+    { "url": "heroku/python" }
+  ]
 }
