@@ -1,0 +1,32 @@
+{
+  "name": "Utkarsh Telegram Downloader Bot",
+  "description": "A Telegram bot that downloads Utkarsh PDFs/Videos using Indian IP via Cloudflare Worker Proxy.",
+  "repository": "https://github.com/yourusername/utkarsh-tele-bot",
+  "logo": "https://files.catbox.moe/s6jyou.jpg",
+  "keywords": ["telegram", "utkarsh", "pdf", "bot", "proxy"],
+  "env": {
+    "API_ID": {
+      "description": "Get from https://my.telegram.org",
+      "value": "26468828"
+    },
+    "API_HASH": {
+      "description": "Get from https://my.telegram.org",
+      "value": "4693513c08d1ac6af15f95b116c29478"
+    },
+    "BOT_TOKEN": {
+      "description": "Get from BotFather",
+      "value": ""
+    },
+    "WORKER_URL": {
+      "description": "Your Cloudflare Worker Proxy URL",
+      "value": "https://39217846.utkarsh-proxy.pages.dev/?url="
+    }
+  },
+  "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "standard-2x"
+        }
+   }, 
+  "stack": "container"
+}
