@@ -6,7 +6,8 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-# Copy bot files
+# Copy all bot files
 COPY . .
 
+# Default command
 CMD ["python3", "bot.py"]
